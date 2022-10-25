@@ -18,260 +18,47 @@
     <!--  Mengatur nilai yang akan di tampilkan di isi fragment -->
     <string-array name="genre">
         <item>Horror</item>
-        <item>Komedi</item>
+        <item>Comedy</item>
         <item>Drama</item>
-        <item>Musikal</item>
-    </string-array>
-    <string-array name="cari">
-        <item>@array/Horror</item>
+        <item>Musical</item>
+        <item>Action</item>
+        <item>Family</item>
+        <item>Romance</item>
+        <item>Thriller</item>
     </string-array>
     <string-array name="Film">
-        <item>Ada Apa Dengan Pocong (Horror, Komedi)</item>
-    </string-array>
-    <string-array name="Horror">
-        <item>AADP</item>
-    </string-array>
-    <string-array name="Komedi">
-        <item>Warkop</item>
-    </string-array>
-
-
-    <string-array name="words">
-        <item>Apples</item>
-        <item>Apricots</item>
-        <item>Avocados</item>
-        <item>Banana</item>
-        <item>Boysenberries</item>
-        <item>blackberries</item>
-        <item>Blueberries</item>
-        <item>bing cherry</item>
-        <item>camera</item>
-        <item>catapult</item>
-        <item>center</item>
-        <item>children</item>
-        <item>city</item>
-        <item>class</item>
-        <item>click</item>
-        <item>coffee</item>
-        <item>comment</item>
-        <item>company</item>
-        <item>contact</item>
-        <item>copyright</item>
-        <item>creative</item>
-        <item>data</item>
-        <item>day</item>
-        <item>details</item>
-        <item>development</item>
-        <item>dine</item>
-        <item>dream</item>
-        <item>dusk</item>
-        <item>each</item>
-        <item>education</item>
-        <item>electric</item>
-        <item>elephant</item>
-        <item>email</item>
-        <item>emerald</item>
-        <item>event</item>
-        <item>every</item>
-        <item>family</item>
-        <item>file</item>
-        <item>find</item>
-        <item>first</item>
-        <item>flair</item>
-        <item>flight</item>
-        <item>follow</item>
-        <item>forum</item>
-        <item>fox</item>
-        <item>free</item>
-        <item>frequent</item>
-        <item>full</item>
-        <item>game</item>
-        <item>general</item>
-        <item>glass</item>
-        <item>good</item>
-        <item>gram</item>
-        <item>gray</item>
-        <item>great</item>
-        <item>green</item>
-        <item>group</item>
-        <item>guide</item>
-        <item>guitar</item>
-        <item>haircut</item>
-        <item>health</item>
-        <item>hearsay</item>
-        <item>help</item>
-        <item>here</item>
-        <item>home</item>
-        <item>honey</item>
-        <item>hundred</item>
-        <item>hurried</item>
-        <item>ice</item>
-        <item>icon</item>
-        <item>inbox</item>
-        <item>incomplete</item>
-        <item>information</item>
-        <item>investment</item>
-        <item>item</item>
-        <item>jackal</item>
-        <item>january</item>
-        <item>job</item>
-        <item>join</item>
-        <item>joke</item>
-        <item>journal</item>
-        <item>july</item>
-        <item>jump</item>
-        <item>june</item>
-        <item>kangaroo</item>
-        <item>keep</item>
-        <item>keyboard</item>
-        <item>kind</item>
-        <item>kingdom</item>
-        <item>knowledge</item>
-        <item>known</item>
-        <item>koala</item>
-        <item>landscape</item>
-        <item>last</item>
-        <item>late</item>
-        <item>laugh</item>
-        <item>lemon</item>
-        <item>letter</item>
-        <item>lily</item>
-        <item>link</item>
-        <item>list</item>
-        <item>local</item>
-        <item>long</item>
-        <item>madeleine</item>
-        <item>magazine</item>
-        <item>make</item>
-        <item>many</item>
-        <item>marine</item>
-        <item>maze</item>
-        <item>meditate</item>
-        <item>message</item>
-        <item>momentum</item>
-        <item>moon</item>
-        <item>more</item>
-        <item>most</item>
-        <item>mountain</item>
-        <item>music</item>
-        <item>name</item>
-        <item>need</item>
-        <item>negotiate</item>
-        <item>news</item>
-        <item>next</item>
-        <item>night</item>
-        <item>north</item>
-        <item>not</item>
-        <item>now</item>
-        <item>number</item>
-        <item>number</item>
-        <item>oak</item>
-        <item>octopus</item>
-        <item>online</item>
-        <item>only</item>
-        <item>opposite</item>
-        <item>order</item>
-        <item>other</item>
-        <item>pack</item>
-        <item>page</item>
-        <item>painting</item>
-        <item>people</item>
-        <item>pillow</item>
-        <item>pizza</item>
-        <item>podcast</item>
-        <item>polar</item>
-        <item>policy</item>
-        <item>post</item>
-        <item>presentation</item>
-        <item>price</item>
-        <item>product</item>
-        <item>public</item>
-        <item>puppy</item>
-        <item>puzzle</item>
-        <item>quality</item>
-        <item>quantity</item>
-        <item>query</item>
-        <item>quest</item>
-        <item>question</item>
-        <item>quick</item>
-        <item>quince</item>
-        <item>quite</item>
-        <item>quotation</item>
-        <item>read</item>
-        <item>real</item>
-        <item>recipe</item>
-        <item>report</item>
-        <item>research</item>
-        <item>restaurant</item>
-        <item>review</item>
-        <item>revolve</item>
-        <item>rewind</item>
-        <item>right</item>
-        <item>search</item>
-        <item>secret</item>
-        <item>see</item>
-        <item>seed</item>
-        <item>service</item>
-        <item>ship</item>
-        <item>should</item>
-        <item>site</item>
-        <item>skill</item>
-        <item>stargaze</item>
-        <item>state</item>
-        <item>style</item>
-        <item>sunrise</item>
-        <item>taxi</item>
-        <item>tidy</item>
-        <item>time</item>
-        <item>together</item>
-        <item>tourist</item>
-        <item>trailer</item>
-        <item>travel</item>
-        <item>truck</item>
-        <item>under</item>
-        <item>unicorn</item>
-        <item>uniform</item>
-        <item>unique</item>
-        <item>united</item>
-        <item>university</item>
-        <item>uplife</item>
-        <item>useful</item>
-        <item>value</item>
-        <item>various</item>
-        <item>vase</item>
-        <item>version</item>
-        <item>very</item>
-        <item>video</item>
-        <item>view</item>
-        <item>violin</item>
-        <item>vision</item>
-        <item>visit</item>
-        <item>volume</item>
-        <item>walrus</item>
-        <item>wander</item>
-        <item>well</item>
-        <item>whirlwind</item>
-        <item>winter</item>
-        <item>world</item>
-        <item>would</item>
-        <item>xanthin</item>
-        <item>xenial</item>
-        <item>xenolith</item>
-        <item>xenon</item>
-        <item>xiphoid</item>
-        <item>yacht</item>
-        <item>year</item>
-        <item>yield</item>
-        <item>yoga</item>
-        <item>yogurt</item>
-        <item>young</item>
-        <item>your</item>
-        <item>zein</item>
-        <item>zero</item>
-        <item>zigzag</item>
-        <item>zine</item>
-        <item>zone</item>
-        <item>zoo</item>
-        <item>zouk</item>
+        <item>Ada Apa Dengan Pocong (Comedy, Horror)</item>
+        <item>Million Dolar Arm (Drama)</item>
+        <item>The Mountain Between Us (Drama)</item>
+        <item>The Greatest Showman (Drama, Musical)</item>
+        <item>The Favourite (Drama)</item>
+        <item>The Secret Life Of Walter Mitty</item>
+        <item>5 cm (Drama, Romance)</item>
+        <item>A Christmas Carol (Drama, Family)</item>
+        <item>Ambilkan Bulan (Drama, Family, Musical)</item>
+        <item>Ananta (Drama)</item>
+        <item>Because We Forget Everything (Darama, Thriller)</item>
+        <item>Benyamin Biang Kerok (Drama, Comedy)</item>
+        <item>Cek Toko Sebelah (Drama, Comedy)</item>
+        <item>The Lion King (Family, Musical)</item>
+        <item>Aladin (Family, Musical)</item>
+        <item>Maleficent (Family)</item>
+        <item>Maleficent: Mistress of Evil (Family)</item>
+        <item>Ratatouille (Family)</item>
+        <item>Into The woods (Family, Musical)</item>
+        <item>Tooth Fairy (Comedy, Family)</item>
+        <item>Tooth Fairy 2 (Comedy, Family)</item>
+        <item>Mrs. Doubtfire (Comedy, Family)</item>
+        <item>Ice Age (Comedy, Family)</item>
+        <item>Bed Time Stories (Comedy, Family)</item>
+        <item>Night at The Museum (Comedy)</item>
+        <item>Avengers: Infinity War (Action)</item>
+        <item>Avengers: Endgame (Action)</item>
+        <item>Deadpool (Action, Comedy)</item>
+        <item>Assassin Creed (Action)</item>
+        <item>Ready Or Not (Horror, Thriller)</item>
+        <item>Alas Pati (Horror)</item>
+        <item>Kain Kafan Perawan (Horror)</item>
+        <item>Nenek Gayung (Horror, Comedy)</item>
     </string-array>
 </resources>

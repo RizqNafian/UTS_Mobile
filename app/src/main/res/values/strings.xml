@@ -16,7 +16,7 @@
 <!-- mengatur isi tulisan pada layout yang akan ditampilkan -->
 <resources>
     <string name="app_name">MovieKita</string>
-    <string name="detail_prefix">Fruit That Start With</string>
+    <string name="detail_prefix">Genre</string>
     <string name="action_switch_layout">Switch Layout</string>
     <string name="look_up_word">Look up word in a Browser Search</string>
     <string name="look_up_words">Show Stored Words</string>
