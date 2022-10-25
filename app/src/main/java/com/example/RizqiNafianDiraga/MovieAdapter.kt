@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.UTS
+package com.example.RizqiNafianDiraga
 
 import android.content.Context
 import android.content.Intent
@@ -27,28 +27,22 @@ import android.widget.Button
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
 
-/**
- * Adapter for the [RecyclerView] in [DetailActivity].
- */
-class WordAdapter(private val letterId: String, context: Context) :
-    RecyclerView.Adapter<WordAdapter.WordViewHolder>() {
+class MovieAdapter(private val letterId: String, context: Context) :
+    RecyclerView.Adapter<MovieAdapter.WordViewHolder>() {
 
+    // menyiapakan variable untuk filter
     private val filteredWords: List<String>
 
     init {
-        // Retrieve the list of words from res/values/arrays.xml
-        val words = context.resources.getStringArray(R.array.Horror).toList()
+        // Mengambil list array dari res/value/array
+        val words = context.resources.getStringArray(R.array.Film).toList()
 
         filteredWords = words
-            // Returns items in a collection if the conditional clause is true,
-            // in this case if an item starts with the given letter,
-            // ignoring UPPERCASE or lowercase.
+            // menampilkan data yang tersaing (yang terdapat kata itu dan menghirukan besar kecilnya)
             .filter { it.contains(letterId, ignoreCase = true) }
-            // Returns a collection that it has shuffled in place
+            // mengacak data
             .shuffled()
-            // Returns the first n items as a [List]
-            .take(5)
-            // Returns a sorted version of that [List]
+            // mengurutkan data yang di tampilkan
             .sorted()
     }
 
@@ -58,33 +52,30 @@ class WordAdapter(private val letterId: String, context: Context) :
 
     override fun getItemCount(): Int = filteredWords.size
 
-    /**
-     * Creates new views with R.layout.item_view as its template
-     */
+    // membuat R.layout.item_view masuk ke layout parant
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WordViewHolder {
         val layout = LayoutInflater
             .from(parent.context)
             .inflate(R.layout.item_view, parent, false)
 
-        // Setup custom accessibility delegate to set the text read
+        // mengtur aksesdelegasi mejadi Accessibility (text dapat terbaca)
         layout.accessibilityDelegate = Accessibility
 
         return WordViewHolder(layout)
     }
 
-    /**
-     * Replaces the content of an existing view with new data
-     */
+    // mengganti isi konten
     override fun onBindViewHolder(holder: WordViewHolder, position: Int) {
 
+        // memangil data yang telah di filter
         val item = filteredWords[position]
         // Needed to call startActivity
         val context = holder.view.context
 
-        // Set the text of the WordViewHolder
+        // mengatur text kedalam view
         holder.button.text = item
         holder.button.setOnClickListener {
-            val queryUrl: Uri = Uri.parse("${WordListFragment.SEARCH_PREFIX}${item}")
+            val queryUrl: Uri = Uri.parse("${MovieListFragment.SEARCH_PREFIX}${item}")
             val intent = Intent(Intent.ACTION_VIEW, queryUrl)
             context.startActivity(intent)
         }

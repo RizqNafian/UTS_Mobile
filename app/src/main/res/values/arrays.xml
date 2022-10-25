@@ -25,12 +25,17 @@
     <string-array name="cari">
         <item>@array/Horror</item>
     </string-array>
+    <string-array name="Film">
+        <item>Ada Apa Dengan Pocong (Horror, Komedi)</item>
+    </string-array>
     <string-array name="Horror">
         <item>AADP</item>
     </string-array>
     <string-array name="Komedi">
         <item>Warkop</item>
     </string-array>
+
+
     <string-array name="words">
         <item>Apples</item>
         <item>Apricots</item>

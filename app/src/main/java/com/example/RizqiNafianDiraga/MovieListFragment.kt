@@ -1,4 +1,4 @@
-package com.example.UTS
+package com.example.RizqiNafianDiraga
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,17 +7,17 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.UTS.databinding.FragmentWordListBinding
+import com.example.RizqiNafianDiraga.databinding.FragmentMovieListBinding
 
 // menampilkan RecyclerView dengan tombol pencarian
-class WordListFragment : Fragment() {
+class MovieListFragment : Fragment() {
     // mengatur akses varible dan arah pencarian
     companion object {
         val LETTER = "letter"
         val SEARCH_PREFIX = "https://www.google.com/search?q="
     }
     // menyiapkan variable binding
-    private var _binding: FragmentWordListBinding? = null
+    private var _binding: FragmentMovieListBinding? = null
     // mengeset variable binding
     private val binding get() = _binding!!
     private lateinit var letterId: String
@@ -34,13 +34,13 @@ class WordListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // mengambil dan menampilkan layout
-        _binding = FragmentWordListBinding.inflate(inflater, container, false)
+        _binding = FragmentMovieListBinding.inflate(inflater, container, false)
         return binding.root
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val recyclerView = binding.recyclerView
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        recyclerView.adapter = WordAdapter(letterId, requireContext())
+        recyclerView.adapter = MovieAdapter(letterId, requireContext())
         // menambahkan DividerItemDecoration diantara item
         recyclerView.addItemDecoration(
             DividerItemDecoration(context, DividerItemDecoration.VERTICAL)

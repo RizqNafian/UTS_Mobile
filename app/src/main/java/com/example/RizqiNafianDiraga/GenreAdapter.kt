@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.UTS
+package com.example.RizqiNafianDiraga
 
 import android.content.Context
 import android.os.Build
@@ -29,10 +29,10 @@ import androidx.recyclerview.widget.RecyclerView
 /**
  * Adapter for the [RecyclerView] in [MainActivity].
  */
-class LetterAdapter(context: Context) :
-    RecyclerView.Adapter<LetterAdapter.LetterViewHolder>() {
+class GenreAdapter(context: Context) :
+    RecyclerView.Adapter<GenreAdapter.LetterViewHolder>() {
 
-    // Generates a [CharRange] from 'A' to 'Z' and converts it to a list
+    // Mengambil isi list dari array genre
     private val list = context.resources.getStringArray(R.array.genre).toList()
 
     /**
@@ -67,7 +67,7 @@ class LetterAdapter(context: Context) :
         // menambahkan OnClickListener untuk tombol viewholder
         holder.button.setOnClickListener {
             // menghubungkan wordlist ke detaillist
-            val action = LetterListFragmentDirections.actionLetterListFragmentToWordListFragment(letter = holder.button.text.toString())
+            val action = GenreListFragmentDirections.actionGenreListFragmentToMovieListFragment(letter = holder.button.text.toString())
             holder.view.findNavController().navigate(action)
         }
     }

@@ -1,4 +1,4 @@
-package com.example.UTS
+package com.example.RizqiNafianDiraga
 
 import android.os.Bundle
 import android.view.*
@@ -7,11 +7,11 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.UTS.databinding.FragmentLetterListBinding
+import com.example.RizqiNafianDiraga.databinding.FragmentGenreListBinding
 
-class LetterListFragment : Fragment() {
+class GenreListFragment : Fragment() {
     // menyiapkan variable binding
-    private var _binding: FragmentLetterListBinding? = null
+    private var _binding: FragmentGenreListBinding? = null
     // mngeset variable binding
     private val binding get() = _binding!!
     // mengatur layaoutmanager agar tetap menggunakan RecyclerView
@@ -27,7 +27,7 @@ class LetterListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // mengambil dan menampilkan layout
-        _binding = FragmentLetterListBinding.inflate(inflater, container, false)
+        _binding = FragmentGenreListBinding.inflate(inflater, container, false)
         val view = binding.root
         return view
     }
@@ -52,11 +52,11 @@ class LetterListFragment : Fragment() {
         when (isLinearLayoutManager) {
             true -> {
                 recyclerView.layoutManager = LinearLayoutManager(context)
-                recyclerView.adapter = LetterAdapter(requireContext())
+                recyclerView.adapter = GenreAdapter(requireContext())
             }
             false -> {
                 recyclerView.layoutManager = GridLayoutManager(context, 4)
-                recyclerView.adapter = LetterAdapter(requireContext())
+                recyclerView.adapter = GenreAdapter(requireContext())
             }
         }
     }

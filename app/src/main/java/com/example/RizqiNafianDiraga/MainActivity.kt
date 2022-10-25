@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.UTS
+package com.example.RizqiNafianDiraga
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
-import com.example.UTS.databinding.ActivityMainBinding
+import com.example.RizqiNafianDiraga.databinding.ActivityMainBinding
 
 /**
  * Main Activity and entry point for the app. Displays a RecyclerView of letters.
