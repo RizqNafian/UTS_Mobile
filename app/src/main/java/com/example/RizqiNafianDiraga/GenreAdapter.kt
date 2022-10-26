@@ -26,29 +26,23 @@ import androidx.annotation.RequiresApi
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 
-/**
- * Adapter for the [RecyclerView] in [MainActivity].
- */
 class GenreAdapter(context: Context) :
     RecyclerView.Adapter<GenreAdapter.LetterViewHolder>() {
 
     // Mengambil isi list dari array genre
     private val list = context.resources.getStringArray(R.array.genre).toList()
 
-    /**
-     * Provides a reference for the views needed to display items in your list.
-     */
+    // Menampilkan data dari list array ke button
     class LetterViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         val button = view.findViewById<Button>(R.id.button_item)
     }
 
+    // Mneghitung total ukuran list array
     override fun getItemCount(): Int {
         return list.size
     }
 
-    /**
-     * Creates new views with R.layout.item_view as its template
-     */
+    // Membuat tampilan layout untuk item view
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LetterViewHolder {
         val layout = LayoutInflater
                 .from(parent.context)
@@ -58,22 +52,19 @@ class GenreAdapter(context: Context) :
         return LetterViewHolder(layout)
     }
 
-    /**
-     * Replaces the content of an existing view with new data
-     */
+    // Menganti isi tampilan dengan data baru
     override fun onBindViewHolder(holder: LetterViewHolder, position: Int) {
         val item = list.get(position)
         holder.button.text = item.toString()
         // menambahkan OnClickListener untuk tombol viewholder
         holder.button.setOnClickListener {
-            // menghubungkan wordlist ke detaillist
+            // menghubungkan Genrelist ke Moviellist
             val action = GenreListFragmentDirections.actionGenreListFragmentToMovieListFragment(letter = holder.button.text.toString())
             holder.view.findNavController().navigate(action)
         }
     }
 
-    // Setup custom accessibility delegate to set the text read with
-    // an accessibility service
+    // mengatur akses delegasi dengan akses service
     companion object Accessibility : View.AccessibilityDelegate() {
         @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
         override fun onInitializeAccessibilityNodeInfo(
@@ -81,10 +72,6 @@ class GenreAdapter(context: Context) :
             info: AccessibilityNodeInfo
         ) {
             super.onInitializeAccessibilityNodeInfo(host, info)
-            // With `null` as the second argument to [AccessibilityAction], the
-            // accessibility service announces "double tap to activate".
-            // If a custom string is provided,
-            // it announces "double tap to <custom string>".
             val customString = host.context?.getString(R.string.look_up_words)
             val customClick =
                 AccessibilityNodeInfo.AccessibilityAction(

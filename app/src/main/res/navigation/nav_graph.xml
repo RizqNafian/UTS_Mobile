@@ -30,7 +30,7 @@
         android:label="@string/app_name"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_home2_to_letterListFragment"
+            android:id="@+id/action_Home_to_GenreListFragment"
             app:destination="@id/letterListFragment" />
     </fragment>
 </navigation>

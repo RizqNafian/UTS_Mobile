@@ -22,6 +22,7 @@ class GenreListFragment : Fragment() {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -64,7 +65,7 @@ class GenreListFragment : Fragment() {
     private fun setIcon(menuItem: MenuItem?) {
         if (menuItem == null)
             return
-
+        // Mengatur icon untuk mengganti Layout Grid/Linear
         menuItem.icon =
             if (isLinearLayoutManager)
                 ContextCompat.getDrawable(this.requireContext(), R.drawable.ic_grid_layout)

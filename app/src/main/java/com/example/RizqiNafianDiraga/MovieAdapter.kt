@@ -80,8 +80,7 @@ class MovieAdapter(private val letterId: String, context: Context) :
             context.startActivity(intent)
         }
     }
-    // Setup custom accessibility delegate to set the text read with
-    // an accessibility service
+    // mengatur akses delegasi dengan akses service
     companion object Accessibility : View.AccessibilityDelegate() {
         @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
         override fun onInitializeAccessibilityNodeInfo(
@@ -89,10 +88,6 @@ class MovieAdapter(private val letterId: String, context: Context) :
             info: AccessibilityNodeInfo
         ) {
             super.onInitializeAccessibilityNodeInfo(host, info)
-            // With `null` as the second argument to [AccessibilityAction], the
-            // accessibility service announces "double tap to activate".
-            // If a custom string is provided,
-            // it announces "double tap to <custom string>".
             val customString = host.context?.getString(R.string.look_up_word)
             val customClick =
                 AccessibilityNodeInfo.AccessibilityAction(

@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2020 The Android Open Source Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
+<!--  Mengatur nilai yang akan di tampilkan di isi fragment berupa array -->
 <resources>
-    <!--  Mengatur nilai yang akan di tampilkan di isi fragment -->
     <string-array name="genre">
         <item>Horror</item>
         <item>Comedy</item>
@@ -60,5 +45,43 @@
         <item>Alas Pati (Horror)</item>
         <item>Kain Kafan Perawan (Horror)</item>
         <item>Nenek Gayung (Horror, Comedy)</item>
+        <item>Ghibah (Horror, Thriller)</item>
+        <item>Kakek Cangkul (Horror, Comedy)</item>
+        <item>Mall Klender (Horror, Thriller)</item>
+        <item>Munafik (Horror)</item>
+        <item>Pelukis Hantu (Horror, Comedy)</item>
+        <item>Pocong Ngesot (Horror, Comedy)</item>
+        <item>Keluarga Tak Kasat Mata (Horror)</item>
+        <item>Kakak (Horror)</item>
+        <item>Kain Kafan Perawan (Horror)</item>
+        <item>Glass (Thriller)</item>
+        <item>Black Swan (Thriller)</item>
+        <item>308 (Horror, Thriller)</item>
+        <item>Affair (Horror,Thriller)</item>
+        <item>Hangout (Comedy, Thriller)</item>
+        <item>Missing (Thriller)</item>
+        <item>No Exit (Thriller)</item>
+        <item>Nightmare Allay (Thriller)</item>
+        <item>The Night House (Thriller, Horror)</item>
+        <item>Aquamarine (Romance, Comedy)</item>
+        <item>Just Married (Romance)</item>
+        <item>Aku, Kau dan KUA (Romance, Comedy)</item>
+        <item>Arini (Drama, Romance)</item>
+        <item>Asal Kau Bahagia (Drama, Romance)</item>
+        <item>Crush (Romance)</item>
+        <item>Kukira Kamu Rumah (Drama, Romance)</item>
+        <item>Mau Jadi apa? (Drama, Romance)</item>
+        <item>My Best Summer (Romance)</item>
+        <item>My Super EX-Girlfriend (Comedy, Romance)</item>
+        <item>Single (Comedy, Romance)</item>
+        <item>Pirates of Caribbean: The Curse of Black Pearl (Action, Comedy)</item>
+        <item>Doctor Strange (Action)</item>
+        <item>Prince of Persia: The Sands of Time (Action)</item>
+        <item>The Lone Ranger (Action)</item>
+        <item>The Maze Runner (Action)</item>
+        <item>The Day After Tomorrow (Action)</item>
+        <item>Aliens (Action)</item>
+        <item>The Seeker (Action)</item>
+        <item>Mulan (Action, Darama)</item>
     </string-array>
 </resources>
