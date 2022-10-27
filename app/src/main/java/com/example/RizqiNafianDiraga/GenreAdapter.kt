@@ -47,7 +47,6 @@ class GenreAdapter(context: Context) :
         val layout = LayoutInflater
                 .from(parent.context)
                 .inflate(R.layout.item_view, parent, false)
-        // Setup custom accessibility delegate to set the text read
         layout.accessibilityDelegate = Accessibility
         return LetterViewHolder(layout)
     }

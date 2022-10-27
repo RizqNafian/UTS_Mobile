@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph.xml"
     app:startDestination="@id/home2">
-    <!--  mengatur fragment letterList  -->
+    <!--  mengatur perpindahnan Genre ke Movie  -->
     <fragment
         android:id="@+id/letterListFragment"
         android:name="com.example.RizqiNafianDiraga.GenreListFragment"
@@ -14,7 +14,7 @@
             android:id="@+id/action_GenreListFragment_to_MovieListFragment"
             app:destination="@id/wordListFragment" />
     </fragment>
-    <!--  mengatur fragment WordList  -->
+    <!--  mengambil data dari klik button yang dipilih  -->
     <fragment
         android:id="@+id/wordListFragment"
         android:name="com.example.RizqiNafianDiraga.MovieListFragment"
@@ -24,6 +24,7 @@
             android:name="letter"
             app:argType="string" />
     </fragment>
+    <!--  mengatur perpindahnan Home ke Genre  -->
     <fragment
         android:id="@+id/home2"
         android:name="com.example.RizqiNafianDiraga.Home"

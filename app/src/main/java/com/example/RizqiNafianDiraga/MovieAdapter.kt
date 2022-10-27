@@ -76,6 +76,7 @@ class MovieAdapter(private val letterId: String, context: Context) :
         holder.button.text = item
         holder.button.setOnClickListener {
             val queryUrl: Uri = Uri.parse("${MovieListFragment.SEARCH_PREFIX}${item}")
+            // menggunakan intent implisit untuk berpindah ke browser
             val intent = Intent(Intent.ACTION_VIEW, queryUrl)
             context.startActivity(intent)
         }

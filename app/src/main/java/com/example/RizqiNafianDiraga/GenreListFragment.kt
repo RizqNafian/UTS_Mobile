@@ -48,7 +48,7 @@ class GenreListFragment : Fragment() {
         val layoutButton = menu.findItem(R.id.action_switch_layout)
         setIcon(layoutButton)
     }
-    // mengatur layoutmanager untuk recyclerView berdasar list
+    // mengatur layout dengan recyclerView dengan grid/linear
     private fun chooseLayout() {
         when (isLinearLayoutManager) {
             true -> {

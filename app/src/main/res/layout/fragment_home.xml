@@ -6,11 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home">
-
+    <!--  Mengatur ConstraintLayout pada layout ini  -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
+        <!--  Mengatur image view pada layout ini  -->
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="0dp"
@@ -22,7 +22,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
+        <!--  Mengatur tulisan pada layout ini  -->
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
             app:layout_constraintHorizontal_bias="0.499"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
+        <!--  Mengatur tombol pada layout ini  -->
         <Button
             android:id="@+id/button"
             android:layout_width="150dp"
